@@ -12,7 +12,6 @@ GlobeHarvest Co. faces the following key challenges in entering the Kenyan agric
 - **Identifying Optimal Sourcing Locations:** The company needs to identify the most cost-effective sourcing locations across different Kenyan counties to minimize procurement costs and ensure a reliable supply chain.
 - **Timing Purchases Strategically:** GlobeHarvest requires insights into the optimal timing for purchasing various commodities, considering seasonal fluctuations, market trends, and price dynamics.
 - **Navigating Price Variabilities:** Significant price discrepancies exist across different regions in Kenya, necessitating a systematic approach to ensure competitive pricing and optimize profitability.
-- **Ensuring Global Competitiveness:** GlobeHarvest aims not only to source commodities but also potentially export products. Understanding how Kenyan prices compare to global averages is essential for identifying export opportunities and maintaining competitiveness in the global market.
 
 ## Objectives:
 The primary objectives of GlobeHarvest Co. in optimizing its sourcing and pricing strategies for the Kenyan market are as follows:
@@ -20,24 +19,62 @@ The primary objectives of GlobeHarvest Co. in optimizing its sourcing and pricin
 1. **Identify Cost-Effective Sourcing Locations:** Analyze data to identify regions in Kenya that offer the most cost-effective sourcing opportunities for various food commodities.
 2. **Strategically Time Purchases:** Utilize historical data and market insights to determine the optimal timing for purchasing specific commodities, considering seasonal trends and market dynamics.
 3. **Navigate Price Variabilities:** Develop strategies to navigate price variabilities across different regions in Kenya, ensuring competitive pricing and maximizing profitability.
-4. **Ensure Global Competitiveness:** Analyze Kenyan prices against global averages to identify competitive advantages and potential export opportunities, positioning GlobeHarvest as a competitive player in the global market.
 
 ## Data Understanding:
-The dataset obtained from Kaggle consists of food price data collected in Kenya, providing valuable insights into the pricing dynamics of various food commodities across different regions and markets. The dataset contains the following columns:
-
-- **date:** The date of the price observation.
-- **admin1:** The first-level administrative division (e.g., province or county) in Kenya.
-- **admin2:** The second-level administrative division (e.g., district or sub-county) in Kenya.
-- **market:** The name of the market where the price was recorded.
-- **latitude:** The latitude coordinates of the market location.
-- **longitude:** The longitude coordinates of the market location.
-- **category:** The category of the food commodity (e.g., cereals and tubers, pulses and nuts, meat, fish, and eggs).
-- **commodity:** The specific name of the food commodity.
-- **unit:** The unit of measurement for the price (e.g., KG for kilograms, G for grams).
-- **priceflag:** Flag indicating the nature of the price observation (e.g., actual, aggregate).
-- **pricetype:** The type of price (e.g., Wholesale, Retail).
-- **currency:** The currency used for pricing (e.g., KES for Kenyan Shilling).
-- **price:** The price of the commodity in the local currency.
-- **usdprice:** The price of the commodity converted to USD.
-
+The dataset obtained from WFP Kaggle consists of food price data collected in Kenya, providing valuable insights into the pricing dynamics of various food commodities across different regions and markets.
 The dataset contains 10,767 rows, each representing a unique observation of food prices in a specific market on a particular date. This dataset provides a comprehensive view of food pricing trends and variations across different regions and market types in Kenya, offering valuable insights for analysis and decision-making in the agricultural sector.
+
+## Modelling
+### Model Selection
+In this section, various machine learning models are evaluated and compared to select the most suitable one for predicting future prices of wholesale commodities.
+
+### Linear Regression Model
+The linear regression model was the first one attempted. Here are the results:
+
+Mean Squared Error (MSE): 202.87
+Coefficient of Determination (R^2 Score): 0.7943
+
+### Random Forest Regressor
+Next, a Random Forest Regressor was trained and evaluated:
+
+Mean Squared Error (MSE): 96.62
+Coefficient of Determination (R^2 Score): 0.9020
+
+### Gradient Boosting Regressor
+A Gradient Boosting Regressor was also tested:
+
+Mean Squared Error (MSE): 96.62
+Coefficient of Determination (R^2 Score): 0.9020
+
+### Decision Tree Regressor
+Lastly, a Decision Tree Regressor was included:
+
+Mean Squared Error (MSE): 211.58
+Coefficient of Determination (R^2 Score): 0.7855
+
+### Model Evaluation
+Comparing the models, the Random Forest Regressor outperformed the others in terms of both MSE and R^2 Score.
+
+Random Forest Regressor: MSE = 96.62, R^2 = 0.9020
+Gradient Boosting Regressor: MSE = 96.62, R^2 = 0.9020
+Linear Regression: MSE = 202.87, R^2 = 0.7943
+Decision Tree Regressor: MSE = 211.58, R^2 = 0.7855
+Therefore, the Random Forest Regressor was chosen as the final model.
+
+### Hyperparameter Tuning
+To optimize the Random Forest model further, a grid search was performed to find the best hyperparameters:
+
+Best Hyperparameters: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+
+### Final Model
+After tuning, the Random Forest Regressor with the best hyperparameters was evaluated on the test set:
+
+Mean Squared Error (MSE): 27.31
+Coefficient of Determination (R^2 Score): 0.9723
+The significantly reduced MSE and improved R^2 score demonstrate the effectiveness of the tuned Random Forest model in predicting future wholesale commodity prices.
+
+
+
+
+
+
