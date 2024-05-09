@@ -125,22 +125,68 @@ A function was created to handle predictions. It processes the input parameters,
 Deployment:
 The model was deployed as a user-friendly web application. Stakeholders can input relevant details, and the predicted price per standard unit is displayed promptly on-screen.
 
-## Deployment
-Exporting Model and Data:
-The trained model was exported using the pickle library. Additionally, the wholesale and encoded data were exported to CSV files.
-
-Web Application:
-The deployed web application allows users to input parameters such as location, food category, commodity, year, and month. Subsequently, the model generates and displays the predicted price per standard unit.
-
 ## Conclusion
 In conclusion, this project aimed to develop a robust system for predicting wholesale prices of food commodities. By leveraging machine learning techniques, we achieved high accuracy in price predictions, facilitating informed decision-making for stakeholders. Moving forward, ongoing data augmentation and real-time data integration will further enhance the system's accuracy and relevance.
 
 ## Recommendations
-Data Augmentation:
-To enhance prediction accuracy, we recommend augmenting the dataset with additional trusted sources.
+## <b>7. Recommendations</b>
+
+
+The following are the recommendations to be made after undertaking this project. This will also include ways to improve the system in future and general observations. These include;
+ - Global Harvest Co. should prioritize investments in acquiring and selling cereals and tubers, capitalizing on their high-demand
+ - Focus on provinces like Coast for sourcing and Rift Valley, North Eastern, and Nairobi for retail sales could optimize profits.
+ - Global Harvest Co. should consider sourcing from cluster 1 to minimize procurement costs and enhance competitiveness.
+ - Global Harvest Co. can forecast prices using the Random Forest Regressor model, enabling better procurement and pricing strategies.
+ - Complete data can be acquired from other trusted sources to make the information more complete. This will improve prediction accuracy.
+ - More recent data can be acquired from the World Food Program since this data is updated monthly. This could be via api integration so as to make this process automatic.
+ 
+ Here are the best months to buy each of the top 20 commodities in your dataset, based on the lowest average price:
+
+- **Bananas** - October (Average price: 11.63 KES)
+- **Beans** - August (Average price: 55.94 KES)
+- **Beans (dry)** - September (Average price: 81.15 KES)
+- **Beans (yellow)** - January (Average price: 108.62 KES)
+- **Cabbage** - September (Average price: 19.98 KES)
+- **Kale** - January (Average price: 22.06 KES)
+- **Maize** - September (Average price: 33.70 KES)
+- **Maize (white)** - March (Average price: 37.34 KES)
+- **Maize (white, dry)** - January (Average price: 41.37 KES)
+- **Maize flour** - September (Average price: 62.36 KES)
+- **Milk (UHT)** - September (Average price: 114.19 KES)
+- **Oil (vegetable)** - September (Average price: 198.68 KES)
+- **Onions (dry)** - August (Average price: 51.82 KES)
+- **Potatoes (Irish)** - August (Average price: 38.19 KES)
+- **Rice** - September (Average price: 97.51 KES)
+- **Salt** - August (Average price: 51.32 KES)
+- **Sorghum** - March (Average price: 45.36 KES)
+- **Sugar** - August (Average price: 104.28 KES)
+- **Tomatoes** - January (Average price: 49.68 KES)
+- **Wheat flour** - September (Average price: 68.64 KES)
+
+
+These prices are averages for the months listed, suggesting potentially the best times to make purchases to benefit from lower costs.
+
+<img src="/img/26.png" alt="drawing" width="500"/>
+
+ Global Harvest Co. should `consider sourcing from cluster 1` to minimize procurement costs and enhance competitiveness.
+
+
+## Deployment
+Exporting Model and Data:
+https://itunda.streamlit.app/
+
+The trained model was exported using the pickle library. Additionally, the wholesale and encoded data were exported to CSV files.
+
+Web Application:
+https://itunda.streamlit.app/
+
+The deployed web application allows users to input parameters such as location, food category, commodity, year, and month. Subsequently, the model generates and displays the predicted price per standard unit.
+
 
 Real-time Data Integration:
 Integrating real-time data sources, such as the World Food Program API, could automate data updates, ensuring the system reflects current market trends.
+
+Thank you.
 
 
 
