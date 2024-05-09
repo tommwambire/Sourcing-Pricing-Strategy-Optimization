@@ -29,6 +29,37 @@ The primary objectives of GlobeHarvest Co. in optimizing its sourcing and pricin
 The dataset obtained from WFP Kaggle consists of food price data collected in Kenya, providing valuable insights into the pricing dynamics of various food commodities across different regions and markets.
 The dataset contains 10,767 rows, each representing a unique observation of food prices in a specific market on a particular date. This dataset provides a comprehensive view of food pricing trends and variations across different regions and market types in Kenya, offering valuable insights for analysis and decision-making in the agricultural sector.
 
+### Data Visualizations
+<img src="/img/1.png" alt="drawing" width="500"/>
+
+<img src="/img/2.png" alt="drawing" width="500"/>
+<img src="/img/4.png" alt="drawing" width="500"/>
+
+<img src="/img/5.png" alt="drawing" width="500"/>
+
+<img src="/img/6.png" alt="drawing" width="500"/>
+<img src="/img/10.png" alt="drawing" width="500"/>
+
+<img src="/img/12.png" alt="drawing" width="500"/>
+
+<img src="/img/13.png" alt="drawing" width="500"/>
+
+<img src="/img/14.png" alt="drawing" width="500"/>
+<img src="/img/16.png" alt="drawing" width="500"/>
+
+<img src="/img/17.png" alt="drawing" width="500"/>
+
+<img src="/img/20.png" alt="drawing" width="500"/>
+
+<img src="/img/23.png" alt="drawing" width="500"/>
+
+<img src="/img/25.png" alt="drawing" width="500"/>
+
+<img src="/img/26.png" alt="drawing" width="500"/>
+
+<img src="/img/27.png" alt="drawing" width="500"/>
+
+
 ## Modelling
 ### Model Selection
 In this section, various machine learning models are evaluated and compared to select the most suitable one for predicting future prices of wholesale commodities.
