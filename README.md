@@ -73,6 +73,38 @@ Mean Squared Error (MSE): 27.31
 Coefficient of Determination (R^2 Score): 0.9723
 The significantly reduced MSE and improved R^2 score demonstrate the effectiveness of the tuned Random Forest model in predicting future wholesale commodity prices.
 
+## Predicting Prices Using the Model
+Input Data:
+The input data consists of historical wholesale prices of various commodities categorized by provinces, food categories, commodities, years, months, and corresponding prices per unit.
+
+Example Prediction:
+For instance, predicting the wholesale price of maize (white, dry) in Central Province for May 2024 involves providing specific input parameters like province, food category, commodity, year, and month.
+
+Prediction Methodology:
+We utilized a Random Forest Regressor, which demonstrated high accuracy after tuning, achieving a 97% accuracy rate.
+
+Predicting Function:
+A function was created to handle predictions. It processes the input parameters, converts them into a format suitable for the model, and generates a forecasted price per standard unit.
+
+Deployment:
+The model was deployed as a user-friendly web application. Stakeholders can input relevant details, and the predicted price per standard unit is displayed promptly on-screen.
+
+## Deployment
+Exporting Model and Data:
+The trained model was exported using the pickle library. Additionally, the wholesale and encoded data were exported to CSV files.
+
+Web Application:
+The deployed web application allows users to input parameters such as location, food category, commodity, year, and month. Subsequently, the model generates and displays the predicted price per standard unit.
+
+## Conclusion
+In conclusion, this project aimed to develop a robust system for predicting wholesale prices of food commodities. By leveraging machine learning techniques, we achieved high accuracy in price predictions, facilitating informed decision-making for stakeholders. Moving forward, ongoing data augmentation and real-time data integration will further enhance the system's accuracy and relevance.
+
+## Recommendations
+Data Augmentation:
+To enhance prediction accuracy, we recommend augmenting the dataset with additional trusted sources.
+
+Real-time Data Integration:
+Integrating real-time data sources, such as the World Food Program API, could automate data updates, ensuring the system reflects current market trends.
 
 
 
