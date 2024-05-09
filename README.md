@@ -1,6 +1,7 @@
 # Project Overview: Optimizing Sourcing and Pricing Strategies for GlobeHarvest Co. in Kenya
 
 [Slides](https://www.canva.com/design/DAGEoDs9c_A/jkymq6SIxKdztrvSyO6Y2A/edit)
+
 [Data report](https://docs.google.com/document/d/1UlScpYEa-ohARww3cQ98fCJkoT1UenppYj7cit2m6KU/edit)
 
 ## Introduction
