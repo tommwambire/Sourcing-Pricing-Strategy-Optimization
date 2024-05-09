@@ -1,6 +1,8 @@
 # Project Overview: Optimizing Sourcing and Pricing Strategies for GlobeHarvest Co. in Kenya
 
 [Slides](https://www.canva.com/design/DAGEoDs9c_A/jkymq6SIxKdztrvSyO6Y2A/edit)
+[Data report](https://docs.google.com/document/d/1UlScpYEa-ohARww3cQ98fCJkoT1UenppYj7cit2m6KU/edit)
+
 ## Introduction
 GlobeHarvest Co. is an emerging import-export company poised to enter the Kenyan agricultural market. With a commitment to leveraging data-driven strategies, GlobeHarvest aims to optimize its sourcing and pricing strategies to establish a competitive presence in Kenya's agricultural sector. By harnessing the power of data analytics, GlobeHarvest seeks to gain valuable insights into market dynamics, consumer preferences, and pricing trends to drive informed decision-making and maximize profitability.
 
