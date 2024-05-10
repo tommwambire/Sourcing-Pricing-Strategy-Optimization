@@ -1,4 +1,8 @@
+<img src="logo.png" alt="drawing" width="200"/>
+
 # Project Overview: Optimizing Sourcing and Pricing Strategies for GlobeHarvest Co. in Kenya
+
+
 ![Alt text](<Main.jpeg>)
 
 [Slides](https://www.canva.com/design/DAGEoDs9c_A/jkymq6SIxKdztrvSyO6Y2A/edit)
@@ -173,7 +177,8 @@ These prices are averages for the months listed, suggesting potentially the best
 
 ## Deployment
 Exporting Model and Data:
-https://itunda.streamlit.app/
+
+`/deployment/` Folder
 
 The trained model was exported using the pickle library. Additionally, the wholesale and encoded data were exported to CSV files.
 
@@ -185,6 +190,9 @@ The deployed web application allows users to input parameters such as location, 
 
 Real-time Data Integration:
 Integrating real-time data sources, such as the World Food Program API, could automate data updates, ensuring the system reflects current market trends.
+
+
+<img src="logo.png" alt="drawing" width="200"/>
 
 Thank you.
 
